@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ebe6ea;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    font-style: normal; 
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-content div h1{
+    color: #800000;
+}
+
+main{
+    width: 100%;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    height: 300px;
+    font-size: 16px;
+}
+
+.contenedor-contenido{
+    border: 3px solid #800000;
+    border-radius: 15px;
+    width: 700px;
+    height: 220px;
+    padding: 10px;
+    box-sizing: content-box;
+    box-shadow: 0 0 20px 3px #800000;
+}
+
+.form-content{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-content .item-pass{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 600px;
+    margin: 12px;
+}
+
+.item-pass-1{
+    width: 200px;
+    /*margin-right: 109.4px;*/
+}
+
+.item-pass-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-pass-2 input, .item-pass-2 img{
+    margin-right: 25px;
+}
+
+.form-content div h3{
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+}
+
+.form-content .botones button{
+    margin: 20px;
+}
+
+input{
+    border: none;
+    background-color: #800000;
+    color: #ebe6ea;
+    width: 300px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:hover{
+    box-shadow: 0 0 10px 0 #800000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    border-bottom: 1px solid #800000 !important;
+    -webkit-text-fill-color: #ffffff !important;
+    -webkit-box-shadow: 0 0 0px 1000px #800000 inset !important;
+}
+
+.btn{
+    padding: 7px;
+    border-style: none;
+    background-color: #800000;
+    border-radius: 3px;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow:0 0 20px 0 #800000;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #FFF;
+    transition: 1s all;
+}
+
+#ver-1{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+#esconder-1{
+    display: none;
+    width: 16px;
+    height: 18.5px;
+    cursor: pointer;
+}
+
+
+#ver-2{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+#esconder-2{
+    display: none;
+    width: 16px;
+    height: 18.5px;
+    cursor: pointer;
+}
+
+#ver-3{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+#esconder-3{
+    display: none;
+    width: 16px;
+    height: 18.5px;
+    cursor: pointer;
+}
+
+.header-content, .contenido, footer{
+    margin: 30px;
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 425px){
+
+    main{
+    }
+
+    .contenido{
+        width: 420px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contenedor-contenido{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        height: 285px;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .form-content{
+        width: 100%;
+        width: 390px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-content .item-pass{
+        width: 390px;
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    input{
+        border: none;
+        background-color: #800000;
+        color: #ebe6ea;
+        width: 170px;
+    }
+
+    .item-pass-1 label{
+        width: 100px;
+    }
+
+    .item-pass-2 input, .item-pass-2 img{
+        margin-right: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+
+    .header-content{
+        width: 100%;
+    }
+
+    .contenedor-contenido{
+        margin-left: 7px;
+        margin-right: 0;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+
+    .header-content{
+        width: 380px;
+    }
+
+    footer{
+        width: 380px;
+    }
+}
